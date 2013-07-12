@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
 var fs = require('fs')
 buf = new Buffer(256);
 
-buf = fs.readFile('/etc/passwd', function (err, data) {
+buf = fs.readFile('index.html', function (err, data) {
   if (err) throw err;
   console.log(data);
 });
